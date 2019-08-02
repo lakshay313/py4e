@@ -1,7 +1,12 @@
 hrs = input("Enter Hours:")
-h = float(hrs)
 rate = input("Enter Rate:")
-r = float(rate)
+try:
+    h = float(hrs)
+    r = float(rate)
+except:
+    print("Error, please enter numeric input")
+    quit()
+
 ans = 0.0
 
 ans = ans + r * h
